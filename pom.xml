@@ -15,6 +15,7 @@
     <description>Backend</description>
     <properties>
         <java.version>17</java.version>
+        <jakarta-servlet.version>5.0.0</jakarta-servlet.version>
     </properties>
     <dependencies>
         <dependency>
@@ -33,6 +34,11 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -40,24 +46,15 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
-                <version> 3.2.2 </version>
             </dependency>
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.0</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
@@ -65,7 +62,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version> <!-- ou une version appropriée -->
+            <version> 2.5 </version> <!-- ou une version appropriée -->
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -77,7 +74,7 @@
 
         <dependency>
             <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
